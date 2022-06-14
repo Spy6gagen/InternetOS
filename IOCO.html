@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>InternetOS</title>
+    </head>
+    <body>
+        <h1>InternetOS V0.0.1</h1>
+        <h1>Apps</h1>
+        <div>
+        <a href="https://www.google.com" target="_blank"><button>Google App</button></a>
+        </div>
+        <p> </p>
+        <div>
+        <a href="Intertube.html" target="_blank"><button>Intertube</button></a>
+        </div>
+        <p> </p>
+        <div>
+            <a href="music.html" target="_blank"><button>Music Player</button></a>
+        </div>
+        <h1>Settings</h1>
+        <div>
+        <button type="button" onclick="myFunction()">Change Background Color (Green)</button>
+        </div>
+        <p> </p>
+        <div>
+        <button type="button" onclick="myFunction2()">Change Background Color (Blue)</button>
+        </div>
+        <h1>Games</h1>
+        <div>
+            <a href="game1.html" target="_blank"><button>Snake</button></a>
+        </div>
+        <p> </p>
+        <div>
+            <a href="minesweep.html" target="_blank"><button>MineSweeper</button></a>
+        </div>
+        <h1>Console</h1>
+        <div>
+            <input type="text" name="logsarchives" id="logsarchives" autocomplete="off"  placeholder="Enter Console Command" onkeydown="redirect(this)">
+        </div>
+
+<script>
+function myFunction()
+{   
+document.body.style.backgroundColor= "green";
+}
+function myFunction2()
+{   
+document.body.style.backgroundColor= "blue";
+}
+function redirect(ele) {
+            if(event.key === 'Enter') {
+                if(ele.value === 'IO/PowerO')
+                     window.location.href = 'PowerOff.html';
+                else
+                    alert("Invalid Console Command...");
+            }
+        }
+</script>
+    </body>
+</html>

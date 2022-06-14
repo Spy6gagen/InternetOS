@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html> 
+    <body>
+        <h1>IOCL V1.0</h1>
+        <input type="text" name="logsarchives" id="logsarchives" autocomplete="off"  placeholder="Enter Console Command" onkeydown="redirect(this)">
+    </body>
+    <script>
+        function redirect(ele) {
+            if(event.key === 'Enter') {
+                if(ele.value === 'IO/Start')
+                     window.location.href = 'Main.html';
+                else
+                    alert("Invalid Console Command...");
+            }
+        }
+    </script>
+</html>
